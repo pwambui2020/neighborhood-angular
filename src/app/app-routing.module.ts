@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { EditComponent } from './edit/edit.component';
 import { HomeComponent } from './home/home.component';
 import { HoodsComponent } from './hoods/hoods.component';
 import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   {
-    path: "",
+    path: "home",
     component: HomeComponent
   }, {
     path: "profile",
@@ -14,6 +15,9 @@ const routes: Routes = [
   }, {
     path: "hoods",
     component: HoodsComponent
+  }, {
+    path: "edit",
+    component: EditComponent
   }
 ];
   

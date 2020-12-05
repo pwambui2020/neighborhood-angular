@@ -1,22 +1,26 @@
-<!-- <router-outlet></router-outlet> -->
+<!-- <router-outlet></router-outlet>
 <ng-sidebar-container>
-  <!--sidebar-->
+  
   <ng-sidebar [opened]="opened">
     <p>Neighbor<span>hood</span></p>
     <button (click)="toggleSidebar()">Close Sidebar</button>
     <nav class="menu">
-      <!-- <li><a routerLink="/">Neighbor<span>hood</span></a></li> -->
+      
       <a routerLink="/" (click)="toggleSidebar()">Home</a>
       <a routerLink="/profile" (click)="toggleSidebar()">Profile</a>
       <a routerLink="/hoods" (click)="toggleSidebar()">Hoods</a>
     </nav>
   </ng-sidebar>
   <div ng-sidebar-content>
-    <!--Header --> 
+    
     <button (click)="toggleSidebar()">
       Open Sidebar
     </button> 
-    <!--Body-->
+    
     <router-outlet></router-outlet>
   </div>
-</ng-sidebar-container>
+</ng-sidebar-container> -->
+
+<app-root-nav>
+  <router-outlet></router-outlet>
+</app-root-nav>
