@@ -12,11 +12,13 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MatButtonModule} from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
 
 
 /* Components */
 import { LogInComponent } from './log-in/log-in.component';
 import { RegisterComponent } from './register/register.component';
+import { MatLabel } from '@angular/material/form-field';
 // import { UserRequestService } from './user-http/user-request.service';
 
 
@@ -35,6 +37,7 @@ import { RegisterComponent } from './register/register.component';
     MatCardModule,
     MatButtonModule,
     MatToolbarModule,
+    MatInputModule,
   
   ],
   providers: [],
