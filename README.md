@@ -1,7 +1,16 @@
 # Neighborhood
+This is a Django web application That informs users of all activities that are going down near or around their Neighborhoods
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
+## Figma design 
 
+[Click on the link bellow](https://www.figma.com/file/RBJWUUnkkwlmcDjpkXN2F8/Neighborhood-Group-1-Colors?node-id=145%3A13)
+
+## Authors
+**Rodgers Ouko** <br>
+**Rustique Uwimpaye** <br>
+**Sharon Wawira** <br>
+**Paulyne Wambui** <br>
+**Reagan Owiti**
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -18,10 +27,17 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## technologies used
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+* Python
+* Django
+* JavaScript
+* CSS
+* Bootstrap
+* PostgreSQL Database
 
-## Further help
+## License 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+MIT <br>
+Copyright © by Neighborhood
+
