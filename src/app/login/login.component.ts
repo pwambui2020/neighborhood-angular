@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthorizeService } from '../authorize.service';
-// import { localStorageService } from 'ngx-webstorage';
+
 
 import { Router } from '@angular/router';
+import { User } from '../user';
 
 @Component({
   selector: 'app-login',
@@ -11,26 +12,20 @@ import { Router } from '@angular/router';
   providers: [AuthorizeService]
 })
 export class LoginComponent implements OnInit {
-  email;
-  password;
+  email:string;
+  password:string;
+  user_info:any
 
-  constructor(private auth: AuthorizeService
-    ,private route: Router ) { }
+  constructor(private auth: AuthorizeService,
+    private route: Router ) { }
 
   ngOnInit() {
   }
   login(){
-    this.auth.getAuthToken(this.email, this.password).then(res=>{
-      if(res.valid){
-        this.localStorageService.store('user',res);
-        this.route.navigate(['home']);
-
-      }
-      else{
-        alert(" login failed ");
-      }
-    })
-    
+   this.user_info=new User()
+   this.user_info.email=this.email
+   this.user_info.password=this.password
+    this.auth.getAuthToken(this.user_info)
   }
 
 }
